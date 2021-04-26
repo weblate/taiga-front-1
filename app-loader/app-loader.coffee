@@ -78,6 +78,11 @@ promise = $.getJSON "/conf.json"
 promise.done (data) ->
     window.taigaConfig = _.assign({}, window.taigaConfig, data)
 
+    base = document.querySelector('base')
+
+    if base && window._taigaBaseHref
+        base.setAttribute("href", window._taigaBaseHref)
+
 promise.fail () ->
     console.error "Your conf.json file is not a valid json file, please review it."
 

@@ -14,6 +14,7 @@ html(lang="en", ng-attr-dir="{{ isRTL ? 'rtl' : 'ltr' }}")
 
         // Main meta
         title Taiga
+        base(href="/")
         meta(name="description", content="Taiga is a project management platform for startups and agile developers & designers who want a simple, beautiful tool that makes work truly enjoyable.")
         meta(name="keywords", content="agile, scrum, taiga, management, project, developer, designer, user experience")
 
@@ -27,6 +28,7 @@ html(lang="en", ng-attr-dir="{{ isRTL ? 'rtl' : 'ltr' }}")
             window.TAIGA_VERSION = '#{v}';
             window.TAIGA_USER_PILOT_TOKEN = '#{userpilotToken}'
             window._taigaAvailableThemes = !{availableThemes};
+            window._taigaBaseHref = '/';
 
     body(tg-main, ng-class="{'rtl': isRTL}")
         tg-legacy
