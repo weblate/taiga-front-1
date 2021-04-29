@@ -927,7 +927,7 @@
             "MANAGE_PROJECTS": "Manage projects",
             "TITLE_CREATE_PROJECT": "Create project",
             "HELP_TITLE": "Help",
-            "HOMEPAGE": "Homepage",
+            "HOMEPAGE": "Howatmepage",
             "TAIGA_RESOURCES_TITLE": "Go to Taiga resources",
             "TAIGA_RESOURCES": "Taiga Resources",
             "FEEDBACK_TITLE": "Write to us with your feedback",
@@ -1111,6 +1111,14 @@
                 "CREATE_NEW_ISSUES": "Convert sub-issues to new Taiga issues",
                 "NOT_CREATE_NEW_ISSUES": "Do not import sub-issues"
             }
+        },
+        "NEWSLETTER_OPENING": {
+            "LIGHTBOX_TITLE": "Do you want to receive announcements about Taiga?",
+            "CONFIRMATION" : "Yes, send me news, product updates and recommendations about Taiga.",
+            "NO_SHARE": "We will never share your email address with any third party. Your privacy matter to us (view our privacy policy).",
+            "OPT_OUT": "You can opt-out any time in your account settings > email notifications.",
+            "DONT_ASK": "Don’t ask again",
+            "SAVE_PREFERENCE": "SAVE PREFERENCES"
         }
     },
     "LIGHTBOX": {

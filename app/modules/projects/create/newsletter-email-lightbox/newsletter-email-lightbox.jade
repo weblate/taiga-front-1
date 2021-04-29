@@ -1,0 +1,57 @@
+
+//- This Source Code Form is subject to the terms of the Mozilla Public
+//- License, v. 2.0. If a copy of the MPL was not distributed with this
+//- file, You can obtain one at http://mozilla.org/MPL/2.0/.
+//-
+//- Copyright (c) 2021-present Kaleidos Ventures SL
+
+tg-lightbox-close(on-close="vm.onClose()")
+
+form
+    p(translate="PROJECT.NEWSLETTER_OPENING.CONFIRMATION")
+    .newsletter-info
+        .custom-checkbox
+            input(
+                type="checkbox"
+                name="filter-mode"
+                id="us-check-{{us.ref}}"
+                value="{{option}}"
+                ng-model="vm.filterMode"
+            )
+            label(
+                for="us-check-{{us.ref}}",
+                tabindex="0"
+            )
+        .text-container
+            p(translate="PROJECT.NEWSLETTER_OPENING.CONFIRMATION")
+            p
+                span(translate="PROJECT.NEWSLETTER_OPENING.NO_SHARE")
+                span(translate="PROJECT.NEWSLETTER_OPENING.OPT_OUT")
+                span(translate="PROJECT.WATCH_BUTTON.WATCH")
+
+
+
+
+    .option-container
+        .ask
+            .custom-checkbox
+                input(
+                    type="checkbox"
+                    name="filter-mode"
+                    id="us-check-{{us.ref}}"
+                    value="{{option}}"
+                    ng-model="vm.filterMode"
+                )
+                label(
+                    for="us-check-{{us.ref}}",
+                    tabindex="0"
+                )
+            p(translate="PROJECT.NEWSLETTER_OPENING.DONT_ASK")
+        div.options
+            button.btn-link.btn-cancel.js-cancel(
+                variant="icon"
+            )
+                span(translate="COMMON.CANCEL")
+
+            button.btn-small.js-confirm(variant="primary")
+                span(translate="PROJECT.NEWSLETTER_OPENING.SAVE_PREFERENCE")

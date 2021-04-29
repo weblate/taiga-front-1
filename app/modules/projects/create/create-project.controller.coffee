@@ -12,10 +12,11 @@ class CreateProjectController
         "$translate",
         "tgProjectService",
         "$location",
-        "$tgAuth"
+        "$tgAuth",
+        "tgLightboxFactory"
     ]
 
-    constructor: (@appMetaService, @translate, @projectService, @location, @authService) ->
+    constructor: (@appMetaService, @translate, @projectService, @location, @authService, @lightboxFactory) ->
         taiga.defineImmutableProperty @, "project", () => return @projectService.project
 
         @appMetaService.setfn @._setMeta.bind(this)
@@ -23,7 +24,9 @@ class CreateProjectController
         @authService.refresh()
 
         @.displayScrumDesc = false
-        @.displayKanbanDesc = false
+        @lightboxFactory.create("tg-newsletter-email-lightbox", {
+            "class": "lightbox lightbox-generic-ask lightbox-newsletter-email"
+        })
 
     _setMeta: () ->
         return null if !@.project

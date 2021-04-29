@@ -1,0 +1,36 @@
+.lightbox-newsletter-email {
+
+    form {
+        flex-basis: 700px;
+        max-width: 700px;
+    }
+
+    .newsletter-info {
+        display: flex;
+    }
+
+    .ask {
+        display: flex;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .custom-checkbox {
+        flex-basis: 18px;
+        flex-grow: 0;
+        height: 18px;
+        margin-right: .5rem;
+        margin-top: .2rem;
+    }
+
+    .option-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .options {
+        width: 30%;
+    }
+}
